@@ -19,7 +19,7 @@ public class Points : MonoBehaviour
         if (Bullet.tag == "Food")
         {
             PointsInt += 1;
-            StartCoroutine(Killers());
+            Destroy(gameObject, 0.1f);
         }
     }
     void Update()
